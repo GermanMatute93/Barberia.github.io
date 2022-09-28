@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto-Baberia Alura</title>
+        <link rel="stylesheet" href="Style-reset.css">
+        <link rel="stylesheet" href="Style.css">
+
+    </head>
+    
+    <body>
+        <header>
+
+            <div class="caja">
+
+                <h1><img src="imagen/logo.png" alt="Logo Barberia-Alura"></h1>
+             <nav> <!--Etiqueta especial para identificar una seccion para navegacion-->
+
+                 <ul>
+                 <li> <a href="index.html">Home</a> </li>
+                 <li><a href="Productos.html">Productos</a></li>
+                 <li> <a href="Contacto.html">Contactos</a></li>
+                 </ul>
+              </nav>
+             </div>
+            
+        </header>
+        <main>
+            <form>
+                <label for="nombreApellido">Nombre y Apellido</label> <!--Etiqueta para indicar que significa o que informacion ingresara en la caja de texto-->
+                <input type="text" id="nombreApellido" class="input-padron" required><!--Etiqueta para crear una caja de texto en la pagina html-->
+                
+                <label for="correoelectronico">Correo Electrónico</label> <!--en la etiqueta la sitaxis de for es para indicar que esta informacion ira almacenada a esa etiquera-->
+                <input type="email" id="correoelectronico" class="input-padron" required
+                placeholder="email@dominio.com"> <!--palceholder es una guia que se le da al usuasrio cuando existen cajas de texto para que sepa como llenar ese campo-->
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono"class="input-padron" required
+                placeholder="(XX) XXXX-XXXX"> <!--Required es una etiqueta o palabra clave donde obliga al usuario a llenar los campos que tenga esta palabra-->
+                
+                <label for="cajaMensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="cajaMensaje">  </textarea> <!--Nos muestra en la pagina una caja de texto para mensaje-->
+
+                <fieldset> <!--etiqueta que se usa para indicar que su contenido se referencia a un mismo tema-->
+
+                    <legend>¿Cómo le gustaría que lo contactaramos?</legend>
+
+                    <label for="email"><input type="radio" name="Contacto" value="Email" id="email">Email</label><!--Etiqueta para insertar un radio button y nos sirva como seleccionador de opciones-->
+                                       
+                    <label for="radio-telefono"><input type="radio" name="Contacto" value="Telefono" id="radio-telefono">Telefono</label>
+                    
+                    <label for="radio-wathsapp"><input type="radio" name="Contacto" value="Wathsapp" id="radio-wathsapp" checked>Wathsapp</label> <!--La palabra checked indica al checkbox que que este seleccionado y dando opcion al usuario que lo deshabilite es una guia mas-->
+                                      
+                </fieldset>
+                
+                <fieldset>
+                    <legend>¿En cúal horario desearía ser atendido?</legend>
+                    <select><!--Etiqueta que en cojunto con los option nos despliega una lista tipo menu desplegable-->
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                     <option>Noche</option>
+
+                    </select>
+                
+                    <label class="checbox"> <input type="checkbox" checked>Le gustaría Recibir Novedades de la Barbería Alura? </label> <!--Etiqueta pero con el type checbox,-->
+                </fieldset>
+                
+                <input type="submit" value="Eviar Formulario" class="enviar"> <!--etiqueta que nos muestra un boton de "enviar" en la pagina-->
+
+            </form>
+            <table><!--etiqueta que te permite ingresar una tabla-->
+                <thead> <!--Encabezado de una tabla, para separar y dar mejor fomato o estructura a un codigo que lleva tabla-->
+
+                    <tr> <!--Table rouds son las lienas  o filas de las tablas-->
+                        <th>Dia</th><!--aqui definimos las columnas que tendran nuestras tablas-->
+                        <th>Horarios</th> <!--Filas-->
+                    
+                    </tr> 
+                </thead>
+                
+                <tbody> <!--Cuerpo de una tabla y dentro de ella se colocaran el resto de infromacion de una tabla-->
+                    
+                     <tr> 
+                    <td>Lunes</td>
+                    <td>08h-20h</td> 
+  
+                </tr> 
+
+                <tr> 
+                    <td>miercoles</td>
+                    <td>08h-20h</td> 
+  
+                </tr> 
+                <tr> 
+                    <td>Viernes</td>
+                    <td>08h-20h</td> 
+  
+                </tr> 
+                </tbody>
+               
+            </table>
+        </main>
+        <footer>
+
+            <img src="imagen/logo-blanco.png" alt="Logo Barberia-Alura"> <!--Alt es una etiqueta de texto alternativo, se hace como buena practica y se da una breve resena de la imagen que queremos-->
+            <p class="copyright">
+               &copy; Copyright Barberia Alura - 2022
+            </p>
+        </footer>
+    </body>
+
+</html>

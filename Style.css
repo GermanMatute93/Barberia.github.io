@@ -1,0 +1,250 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+}
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;/* el primer valor del margen indica arriba y abajo sera 0 el segundo valor sera automatico para que se adapte a los 940 pixeles*/
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+nav li{ /*etiqueta para navegador en la lista. nos permite colocar la lista en horizontal*/
+display:inline-block ; /* elimina a modo que se viera en vertical*/
+margin: 0 0 0 15px; /* cambiamos los valores de los magenes */
+}
+nav a{
+    text-transform: uppercase; /* convierte el texto a mayuscula*/
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+     text-decoration: none ;
+}
+nav a:hover{ /* da formato a las etiquetas ue tienen vinculos*/
+    color: #C78C19;
+    text-decoration: underline; /*destaca el texto cuando el puntero esta encima subraya el texto.*/
+
+
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.productos li{  /* da formato a las listas de producto*/
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    
+    margin: 0 1.5%; /* formato al amrgen externo de las imagenes*/
+    padding: 30px 20px;
+    box-sizing: border-box;/*tamano de la caja, es el limite definido por el ancho. distibuye los valores respetando el valor de ancho de los 30%*/
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.productos li:hover{
+    border-color: #C78C19;
+
+}
+.productos li:active{
+    border-color: #088c19;
+    font-size: 33px;
+}
+
+.productos h2{ /* da formato al titulo 2 */
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+.productos li:hover h2{
+    font-size: 33px;
+
+}
+.producto-descripcion{
+    font-size: 18px;
+}
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    background: url(imagen/bg.jpg);
+    padding: 40px;
+    
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+form{
+    margin: 40px 0; /*indicamos que el margen superior e inferior tendra un espacio de 40 pixeles*/
+}
+form label, form legend{ /* aqui le estamos dando formato a dos etiquetas que estan dentro de un mismo form, ayudando a evitar transcribir tanto codigo*/
+    display:block; /* indicamos que el orden de los elementos del label sea en forma vertical*/
+    font-size: 20px; /* indicamos que el tamano de la etiqueta tenga un 20 pixeles*/
+    margin: 0 0 10px;/*indicamos que el margen inferior tenga un 10 de pixeles*/
+
+}
+.input-padron{
+    display: block;/* que los input tambien en forma vertical*/
+    margin: 0 0 20px;
+    padding: 10px 25px ; /* espacio interno del elemento esto se hace para agrandar mas el espacio fisico que ocupara en nuestra pagina */
+    width: 50%;
+}
+.checbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff; /* da color al texto dentro del boton*/
+    background: orange;/*da color de fondo al boton*/
+    border: none; /* quita el border de el boton*/
+    border-radius: 5px;/*redondea los bordes del boton evitando que se vea cuadrado completamente*/
+    transition: 1s background; /*Permite crear una transcion de 1 seg en este caso, al background*/
+    cursor: pointer; /* hace que cuando el cursor se posicione encima del boton, este cambie a una mano*/
+
+}
+.enviar:hover{ /* da efecto de que al momento de que se posicione el mouse, cambie el color del boton */
+    background: darkorange;
+    transform: scale(1.2); /*rotate(70deg) (transform scale()) transforma el boton a una mayor escala 20% y el rotate hace que el boton gire a 70 grados o degree*/
+
+}
+table{ /* le damos un esapcio a nuestra tabla de margen superior e inferior y de los lados*/
+    margin: 40px 40px;
+}
+thead{ /* a nuestro encabezado de la tabla color de fondo, color de letra a blanco, negrita*/
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold; /*NEGRITA A NUESTRO TEXTO DEL ENCABEZADO*/
+
+}
+td,th{ /*aqui le damos el borde a nuestro cuerpo y encabezado a nuestra tabla*/
+    border: 1px solid #000000;
+    padding: 8px 15px; /* espaciaminto interno a los elemntos de nuestra tabla, 8px arriba y abajo, 15 px de los lados*/
+
+}
+/*CSS para nuestro home*/
+.banner{
+    width: 100%;
+}
+.principal{
+    padding: 3em 0;
+    background: #fefefe;
+    width: 940px;
+    margin: 0 auto;
+
+}  
+.tituloPrincipal{
+    text-align: center;
+    font-size: 2em; /*indicamos que el tamano de fuente tenga 2 veces mas*/
+    margin: 0 0 1em;
+    clear: left;
+}
+.principal p{
+    margin: 0 0 1em;
+}
+.principal strong{
+    font-weight: bold;
+    /*text-shadow tambien se le agrega sombra al texto*/
+}
+.principal em{
+    font-style: italic; /* tipo de fuente italica*/
+}
+.utensilios{
+    width: 120px;
+    float: left; /* opcion que le permie a la imagen que le se mezcle con el texto y que psociones*/
+    margin: 0 20px 20px 0;
+}
+.mapa{
+    padding: 3em 0;
+    background:linear-gradient(#fefefe,#888); /* linear gradient nos permite degradar un color, se puede usar con mas colores y se puede colocar grados y orcentaje que queremos que ocupe de espacio cada color*/
+
+}
+.mapa p{
+    margin: 0 0 2em;/* idicamos 2em dos veces el borde inferior de nuestra etiqueta p*/
+    text-align: center;
+}
+.mapaContenido{
+    width: 940px;
+    margin: 0 auto;
+    
+}
+.diferenciales{
+    background: #888;
+    margin: 0;
+    padding: 10px;
+}
+.contenidoDiferenciales{
+ width: 640px;
+ margin: 0 auto;
+ 
+}
+.listaDiferenciales{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;/*posiciona la lista a la linea vertical superior de la imagen que tiene a la par*/
+
+}
+.items{
+    line-height: 1.5; /*aumenta el espacio de los items o vinetas de la lista */
+
+}
+.items:first-child{ /* con este pseudo elemento se agrego negrita a la primera item*/
+    font-style: bold;
+}
+.items:before{ /*pseudo elementos aqui se agrega una estrella en cada vineta de la etiqueta item con la modificacion de "before"*/
+    content: "★";
+}
+.items:first-child{ /* pseudo etiqueta indicando que al primer items dejarlo en negrita*/
+    font-weight: bold;
+
+}
+
+.ImagenDiferenciales{
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 10px #000000; /*propiedad de cs3 para colocar sombras a esta imagen en este caso, si se coloca en negativo se aplica al lado opuesto o superior la sombra*/
+}
+.ImagenDiferenciales:hover{ /*al momento que se posicione el puntero en cima de la iamgen (hover) cambiara su opacidad*/
+    opacity: 0.3;
+}
+.video{
+    width: 560px;
+    margin: 1em auto;
+}
+/*@media screen and (max-width:400px){/*recurso de css que nos permite agregar exepciones, la orden es que si encuentra una pantalla hast 480 px aplicame  de ancho pintara el backgroud rojo*/
+/*body{
+    background: red;*/
+ @media screen and (max-width:480px){
+    h1{
+        text-align: center;/*centralizamos el logo*/
+    }
+    nav{
+        position: static;/*colocamos estatico nuestro panel de navegacion*/
+    }
+    .caja, .principal, .mapaContenido, .contenidoDiferenciales, .video{ /* este codigo es la exepcion para que la pagina y sus elementos se adapten a dispositivo de diferente tama;o de resolucion*/
+        width: auto;
+
+        
+    }
+.listaDiferenciales, .ImagenDiferenciales{ /*aqui se aplica efecto de lista e imagen que esten una arriba y el otro abajo para moviles*/
+width: 100%;
+}
+
+ }

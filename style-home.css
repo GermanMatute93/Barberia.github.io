@@ -1,0 +1,48 @@
+p{
+    text-align: center;
+    
+}
+
+.titulo-centralizado{
+    text-align: center;
+
+}
+.titulo-principal{
+    padding-left:  30px; ;/* aumenta elmargen interno del lado izquierdo*/
+}
+#banner{ /*selectores de identificadores*/
+    width: 100%;
+}  
+.principal{ /* selector de clase lo diferenciamos por un "." al inicio*/
+
+  background: #cccccc;  
+  padding: 20px; /* indica que se aumenta un 20%  al magen interno */
+
+}
+#mision{
+    font-size: 20px
+}
+
+
+em strong{ /*Selectores de etiqueta son los que usamos para darle formato a las etiquetas en HTML*/
+    color: red;
+}
+
+.diferenciales{
+background: #ffffff; /* da color de fondo a blanco*/
+padding: 30px;
+
+}
+
+ul{
+    display: inline-block;/* indica que la lista solo ocupara el espacio que abarque el contenido*/
+    vertical-align: top; /*permite aliearse con la linea superior del la pagina*/
+    width: 30%;/*indica que la lista solo ocupara el 20 porciento de hacho de la pagina */
+    margin-right: 25%;/*se le indica que la lista aumentara en su amrgen derecho 15% */
+}
+.items{
+    font-style: italic;
+}
+.ImagenDiferenciales{
+    width: 25%;
+}
